@@ -1,0 +1,112 @@
+.question {
+  padding: 30px;
+  border-radius: 10px;
+  height: auto;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  .progress {
+    margin-bottom: 30px;
+  }
+
+  .question__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.3);
+  }
+  .question__img {
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-width: 540px;
+    max-height: 359px;
+    border-radius: 20px;
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+  .question__list {
+    position: relative;
+    z-index: 100;
+    .question__item {
+      margin-bottom: 15px;
+      font-size: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &.false {
+        animation: falseAnswer ease 500ms infinite;
+      }
+      &.true {
+        animation: trueAnswer ease 500ms infinite;
+      }
+      @keyframes trueAnswer {
+        0% {
+          background-color: green;
+        }
+        20% {
+          background-color: transparent;
+        }
+        40% {
+          background-color: green;
+        }
+        60% {
+          background-color: transparent;
+        }
+        80% {
+          background-color: green;
+        }
+        100% {
+          background-color: transparent;
+        }
+      }
+
+      @keyframes falseAnswer {
+        0% {
+          background-color: red;
+        }
+        20% {
+          background-color: transparent;
+        }
+        40% {
+          background-color: red;
+        }
+        60% {
+          background-color: transparent;
+        }
+        80% {
+          background-color: red;
+        }
+        100% {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .question {
+    padding: 6px;
+    .progress {
+      margin-bottom: 10px;
+    }
+    .question__title {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .question__img {
+      height: 205px;
+      img {
+      }
+    }
+  }
+}

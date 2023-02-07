@@ -1,0 +1,36 @@
+.wrapper {
+  overflow: auto;
+  padding-bottom: 5px;
+  h1 {
+    margin-bottom: 50px;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.3);
+    font-size: 40px;
+  }
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+@media screen and (max-width: 565px) {
+  .wrapper {
+    h1 {
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      font-size: 24px;
+    }
+  }
+}
