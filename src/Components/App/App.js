@@ -32,7 +32,10 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Header step={step} questionsLength={questions.length} />
+      {step !== questions.length ? (
+        <Header step={step} questionsLength={questions.length} />
+      ) : null}
+
       <main>
         {step !== questions.length ? (
           <Game
@@ -43,7 +46,7 @@ function App() {
         ) : (
           <Result correct={correct} questions={questions} />
         )}
-      </main>``
+      </main>
     </div>
   );
 }

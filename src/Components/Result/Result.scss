@@ -1,20 +1,23 @@
+main {
+  margin-top: 0 !important;
+}
 .result {
-  transform: translateY(50%);
-  padding: 10px;
   .result__wrapper {
     padding: 80px;
     margin: 0 auto;
     text-align: center;
-    background: url('https://i.pinimg.com/originals/44/44/10/4444106f8e5fd6cd2a654b5a31fb0941.jpg');
+    background: url("../../img/fon.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 500px;
-    border-radius: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .result__title {
     margin-bottom: 0;
-    background-color: #ffffff5e;
+    background-color: rgba(255, 255, 255, 0.84%);
     color: #222;
     border-radius: 10px;
     padding: 10px 0;

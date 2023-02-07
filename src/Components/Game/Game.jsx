@@ -10,10 +10,10 @@ const Game = ({ question, onClickVariant, percentage }) => {
         <ProgressBar completed={percentage} bgColor="#CE7151" height="12px" />
       </div>
       <h2 className="question__title">{question.title}</h2>
-      {question.imgUrl !== "" ? (
+      {question.imgPath !== "" ? (
         <motion.div
           initial={{ scale: 0 }}
-          animate={{  scale: 1 }}
+          animate={{ scale: 1 }}
           transition={{
             type: "spring",
             stiffness: 100,
@@ -21,7 +21,7 @@ const Game = ({ question, onClickVariant, percentage }) => {
           }}
         >
           <div className="question__img">
-            <img src={question.imgUrl} alt="" />
+            <img src={question.imgPath} alt="" />
           </div>
         </motion.div>
       ) : null}
