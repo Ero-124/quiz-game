@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quiz-game/static/css/main.8bdda045.css",
-    "main.js": "/quiz-game/static/js/main.93901f3a.js",
+    "main.css": "/quiz-game/static/css/main.9efd4e00.css",
+    "main.js": "/quiz-game/static/js/main.04ef6801.js",
     "static/media/fon.jpg": "/quiz-game/static/media/fon.aedc29fc3788716f66db.jpg",
     "static/media/steve-jobs.jpg": "/quiz-game/static/media/steve-jobs.5a189913c529e168364b.jpg",
     "static/media/pobeda-e1456592070171.jpg": "/quiz-game/static/media/pobeda-e1456592070171.b12cb37da874f9b5e60f.jpg",
@@ -11,11 +11,11 @@
     "static/media/m5f90.jpg": "/quiz-game/static/media/m5f90.79a10b8184f046693a24.jpg",
     "static/media/jiguli.jpg": "/quiz-game/static/media/jiguli.5bbe2b5c1ba2cd8f4c67.jpg",
     "index.html": "/quiz-game/index.html",
-    "main.8bdda045.css.map": "/quiz-game/static/css/main.8bdda045.css.map",
-    "main.93901f3a.js.map": "/quiz-game/static/js/main.93901f3a.js.map"
+    "main.9efd4e00.css.map": "/quiz-game/static/css/main.9efd4e00.css.map",
+    "main.04ef6801.js.map": "/quiz-game/static/js/main.04ef6801.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bdda045.css",
-    "static/js/main.93901f3a.js"
+    "static/css/main.9efd4e00.css",
+    "static/js/main.04ef6801.js"
   ]
 }
